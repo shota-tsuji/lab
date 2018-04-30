@@ -68,7 +68,7 @@
 - vector multiplication on emerging multicore platforms
 
 
-## Optimization techniques for sparse matrix–vector multiplication on GPUs 
+## Optimization techniques for sparse matrix vector multiplication on GPUs 
 - The landscape of parallel computing research: A view from Berkeley
 - Fast sparse matrix–vector multiplication on GPUs for graph applications
 - An efficient two-dimensional blocking strategy for sparse matrix–vector multiplication on GPUs
@@ -99,6 +99,23 @@
 - Sparse matrix–vector multiplication optimizations based on matrix bandwidth reduction using NVIDIA CUDA
 - yaSpVM: Yet another SpMV framework on GPUs
 
+
+## 
+- Optimizing sparse matrix-vector multiplication on gpus
+- Implementing sparse matrix-vector multiplication on throughput-oriented processors
+- Model-driven autotuning of sparse matrix-vector multiply on GPUs
+- Acceleration of conjugate gradient method for circuit simulation using CUDA
+- Implement-
+- ing Blocked Sparse Matrix-Vector Multiplication on NVIDIA GPUs
+- Automatically tuning sparse matrix-vector multiplication for GPU Architectures
+- Designing efficient sorting algorithms for manycore GPUs
+- Efficient Breadth-First Search on the Cell/BE Processor
+- Accelerating Large Graph Al-gorithms on the GPU Using CUDA
+- Improving the Performance of the Sparse Matrix Vector Product with GPUs
+- Optimization of sparse matrix-vector multiplication on emerging multicore platforms
+- Fast
+- Sparse Matrix-Vector Multiplication on GPUs: Implications for Graph Mining
+- Optimization of linked list prefix computations on multithreaded GPUs using CUDA
 
 くわのさん
 高橋先生の備品番号のありますか
