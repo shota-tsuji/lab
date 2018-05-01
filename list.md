@@ -133,5 +133,22 @@
 - Multi-GPU implementation and performance optimization for CSR-based sparse matrix-vector multiplication
 - Performance Optimization for SpMV on Multi-GPU Systems Using Threads and Multiple Streams
 
+## 
+- Implementing Sparse Matrix-Vector Multiplication on Throughput-Oriented Processors
+- Optimization of Quasi Diagonal Matrix-Vector Multiplication on GPU
+- Sparse Matrix Solvers on the GPU: Conjugate Gradients and Multigrid
+- Improving the Performance of the Sparse Matrix Vector Product with GPUs
+- Automatically Generating and Tuning GPU Code for Sparse Matrix-Vector Multiplication from a High-Level Representation
+- Optimization of Sparse Matrix-Vector Multiplication Using Reordering Techniques on GPUs[*]
+- New Row-Grouped CSR Format for Storing the Sparse Matrices on GPU with Implementation in CUDA
+- High-Level Strategies for Parallel Shared-Memory Sparse Matrix-Vector Multiplication(2014)
+- Model-Driven Autotuning of Sparse Matrix-Vector Multiply on GPUs
+- An Extended Compression Format for the Optimization of Sparse Matrix-Vector Multiplication
+- Optimizing Matrix Multiplication for a Short-Vector SIMD Architecture-Cell Processor
+- Optimizing Sparse Matrix-Vector Multiplication on GPUs
+- Self-Adapting Linear Algebra Algorithms and Software
+18. Optimizing Sparse Matrix-Vector Multiplication on CUDA
+19. Fast Sparse Matrix-Vector Multiplication on GPUs: Implications for Graph Mining
+
 いちばん（自分にとって）効率のよい方法とは
 一辺倒になりすぎるのではなく、中間的な位置でつねに場合によって考えるスタンスでいる。
