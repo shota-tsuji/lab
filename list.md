@@ -53,7 +53,7 @@
 - A note on auto-tuning gemm for gpus
 
 
-## Efficient Sparse Matrix-Vector Multiplication on CUDA[*]
+## Efficient Sparse Matrix-Vector Multiplication on CUDA[*, 2008]
 - Solving dense linear systems on graphics processors
 - Prefix sums and their applications
 - Segmented operations for sparse matrix computation on vector multiprocessors
@@ -124,14 +124,14 @@
 - High performance conjugate gradient solver on multi-gpu clusters using hypergraph partitioning
 - SPARSKIT: a basic tool kit for sparse matrix computations - Version 2 
 ### cited
-- Performance analysis and optimization for SpMV on GPU using probabilistic modeling
-- Optimization of sparse matrix-vector multiplication for CRS format on NVIDIA Kepler architecture GPUs
-- Automatic tuning of sparse matrix-vector multiplication for CRS format on GPUs
-- Accurate cross‒architecture performance modeling for sparse matrix‒vector multiplication (SpMV) on GPUs
-- Sparse matrix-vector multiplication on GPGPUs
-- The DynB Sparse Matrix Format Using Variable Sized 2D Blocks for Efficient Sparse Matrix Vector Multiplications with General Matrix Structures
-- Multi-GPU implementation and performance optimization for CSR-based sparse matrix-vector multiplication
-- Performance Optimization for SpMV on Multi-GPU Systems Using Threads and Multiple Streams
+- Performance analysis and optimization for SpMV on GPU using probabilistic modeling[2015]
+- Optimization of sparse matrix-vector multiplication for CRS format on NVIDIA Kepler architecture GPUs[2013]
+- Automatic tuning of sparse matrix-vector multiplication for CRS format on GPUs[2012]
+- Accurate cross‒architecture performance modeling for sparse matrix‒vector multiplication (SpMV) on GPUs[2015]
+- Sparse matrix-vector multiplication on GPGPUs[2017]
+- The DynB Sparse Matrix Format Using Variable Sized 2D Blocks for Efficient Sparse Matrix Vector Multiplications with General Matrix Structures[2017]
+- Multi-GPU implementation and performance optimization for CSR-based sparse matrix-vector multiplication[2017]
+- Performance Optimization for SpMV on Multi-GPU Systems Using Threads and Multiple Streams[2016]
 
 ## Performance analysis and optimization for SpMV on GPU using probabilistic modeling(not read)
 - Implementing Sparse Matrix-Vector Multiplication on Throughput-Oriented Processors
