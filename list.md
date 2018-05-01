@@ -102,7 +102,7 @@
 - yaSpVM: Yet another SpMV framework on GPUs
 
 
-## 
+## Accelerating Sparse Matrix Vector Multiplication in Iterative Methods Using GPU
 - Optimizing sparse matrix-vector multiplication on gpus
 - Implementing sparse matrix-vector multiplication on throughput-oriented processors
 - Model-driven autotuning of sparse matrix-vector multiply on GPUs
@@ -117,7 +117,21 @@
 - Fast
 - Sparse Matrix-Vector Multiplication on GPUs: Implications for Graph Mining
 - Optimization of linked list prefix computations on multithreaded GPUs using CUDA
--
+
+## Optimization of Sparse Matrix-Vector Multiplication by Auto Selecting Storage Schemes on GPU(2011)[*]
+- Efficient Sparse Matrix-Vector Multiplication on CUDA
+- Aegmented Operations for Sparse Matrix Computation on Vector Multiprocessors
+- High performance conjugate gradient solver on multi-gpu clusters using hypergraph partitioning
+- SPARSKIT: a basic tool kit for sparse matrix computations - Version 2 
+### cited
+- Performance analysis and optimization for SpMV on GPU using probabilistic modeling
+- Optimization of sparse matrix-vector multiplication for CRS format on NVIDIA Kepler architecture GPUs
+- Automatic tuning of sparse matrix-vector multiplication for CRS format on GPUs
+- Accurate cross‒architecture performance modeling for sparse matrix‒vector multiplication (SpMV) on GPUs
+- Sparse matrix-vector multiplication on GPGPUs
+- The DynB Sparse Matrix Format Using Variable Sized 2D Blocks for Efficient Sparse Matrix Vector Multiplications with General Matrix Structures
+- Multi-GPU implementation and performance optimization for CSR-based sparse matrix-vector multiplication
+- Performance Optimization for SpMV on Multi-GPU Systems Using Threads and Multiple Streams
 
 いちばん（自分にとって）効率のよい方法とは
 一辺倒になりすぎるのではなく、中間的な位置でつねに場合によって考えるスタンスでいる。
