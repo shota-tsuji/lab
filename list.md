@@ -66,9 +66,11 @@
 - Iterative Methods for Sparse Linear Systems
 - Optimization of sparse matrix-
 - vector multiplication on emerging multicore platforms
+### cited
+- Implementing Sparse Matrix-Vector Multiplication on Throughput-Oriented Processors
+- Model-driven autotuning of sparse matrix-vector multiply on GPUs
 
-
-## Optimization techniques for sparse matrix vector multiplication on GPUs 
+## Optimization techniques for sparse matrix vector multiplication on GPUs[*]
 - The landscape of parallel computing research: A view from Berkeley
 - Fast sparse matrix–vector multiplication on GPUs for graph applications
 - An efficient two-dimensional blocking strategy for sparse matrix–vector multiplication on GPUs
@@ -105,8 +107,7 @@
 - Implementing sparse matrix-vector multiplication on throughput-oriented processors
 - Model-driven autotuning of sparse matrix-vector multiply on GPUs
 - Acceleration of conjugate gradient method for circuit simulation using CUDA
-- Implement-
-- ing Blocked Sparse Matrix-Vector Multiplication on NVIDIA GPUs
+- Implementing Blocked Sparse Matrix-Vector Multiplication on NVIDIA GPUs
 - Automatically tuning sparse matrix-vector multiplication for GPU Architectures
 - Designing efficient sorting algorithms for manycore GPUs
 - Efficient Breadth-First Search on the Cell/BE Processor
@@ -117,10 +118,6 @@
 - Sparse Matrix-Vector Multiplication on GPUs: Implications for Graph Mining
 - Optimization of linked list prefix computations on multithreaded GPUs using CUDA
 -
-
-くわのさん
-高橋先生の備品番号のありますか
-備品シールの番号
 
 いちばん（自分にとって）効率のよい方法とは
 一辺倒になりすぎるのではなく、中間的な位置でつねに場合によって考えるスタンスでいる。
