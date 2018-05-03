@@ -54,21 +54,24 @@
 
 
 ## Efficient Sparse Matrix-Vector Multiplication on CUDA[*, 2008]
-- Solving dense linear systems on graphics processors
-- Prefix sums and their applications
-- Segmented operations for sparse matrix computation on vector multiprocessors
-- Concurrent number cruncher - a GPU implementation of a general sparse linear solver
-- Vectorized sparse matrix multiply for compressed row storage format
-- Toward the optimal preconditioned eigensolver: Locally optimal block preconditioned conjugate gradient method
-- Basic Linear Algebra Subprograms for Fortran Usage
-- Approximation algorithms for scheduling unrelated parallel machines
-- Scalable parallel programming with CUDA
-- Iterative Methods for Sparse Linear Systems
-- Optimization of sparse matrix-
-- vector multiplication on emerging multicore platforms
+2. Solving dense linear systems on graphics processors[2008]
+3. Prefix sums and their applications[1990]
+4. Segmented operations for sparse matrix computation on vector multiprocessors[1993]
+5. Concurrent number cruncher - a GPU implementation of a general sparse linear solver
+6. Vectorized sparse matrix multiply for compressed row storage format[2006]
+8. Sparsity: Optimization framework for sparse matrix kernels[2004]
+9. Toward the optimal preconditioned eigensolver: Locally optimal block preconditioned conjugate gradient method[2002]
+10.  Basic Linear Algebra Subprograms for Fortran Usage[1979]
+11. Approximation algorithms for scheduling unrelated parallel machines[1990]
+13. Scalable parallel programming with CUDA[2008]
+16. Iterative Methods for Sparse Linear Systems[2003]
+19. Optimization of sparse matrix-vector multiplication on emerging multicore platforms[2007]
 ### cited
-- Implementing Sparse Matrix-Vector Multiplication on Throughput-Oriented Processors
-- Model-driven autotuning of sparse matrix-vector multiply on GPUs
+- Implementing Sparse Matrix-Vector Multiplication on Throughput-Oriented Processors[2009]
+- Model-driven autotuning of sparse matrix-vector multiply on GPUs[2010]
+- State-of-the-art in heterogeneous computing[2010]
+- Optimizing sparse matrix-vector multiplication on GPUs using compile-time and run-time strategies[2008]
+-
 
 ## Optimization techniques for sparse matrix vector multiplication on GPUs[*]
 - The landscape of parallel computing research: A view from Berkeley
@@ -119,6 +122,8 @@
 - Optimization of linked list prefix computations on multithreaded GPUs using CUDA
 
 ## Optimization of Sparse Matrix-Vector Multiplication by Auto Selecting Storage Schemes on GPU(2011)[*]
+### notes
+- download pdf is book, "Springer 2011", so large, not downloaded
 - Efficient Sparse Matrix-Vector Multiplication on CUDA
 - Aegmented Operations for Sparse Matrix Computation on Vector Multiprocessors
 - High performance conjugate gradient solver on multi-gpu clusters using hypergraph partitioning
@@ -159,3 +164,30 @@
 
 いちばん（自分にとって）効率のよい方法とは
 一辺倒になりすぎるのではなく、中間的な位置でつねに場合によって考えるスタンスでいる。
+
+気になった点
+目的の2項目は、レベルさげる
+*単語の区切りで、改行(p8など)
+p13 計算環境は表にするとわかりやすい
+p15 非ゼロ要素数(小→大)
+p?? 実行時性能がことなるのはなしは、書いておく必要あり？
+p18 格納形式でグラフ2つにわけると、gpuアーキテクチャ間での比較が見やすい
+
+spmvはcusparseにおいて、様々ん格納形式において実装されている
+
+句点で、読みの息継ぎすると、頭の中で休憩しながら読めるかも
+
+研究室のhow-to本とか読むと、細かいところと大切なところがわかって、自己流をさけると、効率上がる
+
+
+有限要素法no(櫻井先生)
+祖業エレツべく売ろつ
+複数ベクトル　有限要素の代表的な行列にかぎって
+auto-tuning
+v100でどうするかは
+対等な関係だとよい
+公費でかってもらうのが、必ずしもよいとは限らない
+すぐに陳腐化する本なら、研究費で買うとよい
+自分のそばにおいておきたい本は、自分で買う（ブルーバックスなど安いものは自分でも買える）
+
+備品リストには、場所かく（なにがどこにあるかを把握するのが目的）
