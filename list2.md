@@ -18,8 +18,20 @@
 13. OmniRPC: A Grid RPC System for parallel programming in cluster and grid environment[2003]
 14. A Petrov-Galerkin type method for solving Ax = b, where A is a symmetric complex matrix[1990]
 
-##
+## 周回積分法に対する Block Krylov 部分空間反復法の適用と分子軌道計算への応用[2009]
 7. A Filter Diagonalization for Generalized Eigenvalue Problems Based on the Sakurai-Sugiura Method[2008]
 9. 近似係数行列に対する疎行列用直接解法を用いた前処理[2007]
 14. A Parallel Eigensolver Using Contour Integration for Generalized Eigenvalue Problems in Molecular Simulation[2008]
 17. Bi-CGSTAB: A Fast and Smoothly Converging Variant of Bi-CG for the Solution of Nonsymmetric Linear Systems[1992]
+
+## Meso-scale fusion: A method for molecular electronic state calculation in inhomogeneous materials[2002]
+### references
+とくに興味あるのなし
+
+## A perturbation result for generalized eigenvalue problems and its application to error estimation in a quadrature method for computing zeros of analytic functions[2003]
+### overview
+ここに書かれている、一般化固有値問題の説明自体はおもしろそう
+### references
+とくに興味あるのなし
+
+
