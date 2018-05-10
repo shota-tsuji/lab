@@ -1,0 +1,20 @@
+## Auto-tuning of Sparse Matrix-Vector Multiplication on Graphics Processors[2013]
+### References
+6. Optimization and Architecture Effects on GPU Computing Workload Performance[2012]
+7. Automated empirical optimizations of software and the ATLAS project[2000]
+8. pOSKI: An Extensible Auto-tuning Framework to Perform Optimized SpMV on Multi-core Architectures[2005]
+10. pOSKI: An Extensible Auto-tuning Framework to Perform Optimized SpMV on Multi-core Architectures[2008]
+14. Automatically Generating and Tuning GPU Code for Sparse Matrix-Vector Multiplication from a High-Level Representation[2011]
+15. A Model-Driven Partitioning and Auto-Tuning Integrated Framework for Sparse Matrix-Vector Multiplication on GPUs[2011]
+16. Implementing Sparse Matrix-vector Multiplication on Throughput-oriented Processors[2009]
+17. Automatic Performance Tuning of Sparse Matrix Kernels[2010]
+19. Automatically Tuning Sparse Matrix-Vector Multiplication for GPU Architectures[2010]
+20. An Optimal Storage Format for Sparse Matrices[2004]
+21.  Auto-tuning Data Structures of Sparse Matrix-Vector Multiplicaqtion on Graphics Processing Units[2012]
+22. Automatic Performance Tuning of Sparse Matrix Kernels[2003]
+
+### cited
+- Performance of sparse matrix-multiple vectors multiplication on multicore and GPUs[2014]
+- On Implementing Sparse Matrix Multi-vector Multiplication on GPUs[2014]
+- Autotuning runtime specialization for sparse matrix-vector multiplication[2016]
+- An efficient sparse matrix‐vector multiplication on CUDA‐enabled graphic processing units for finite element method simulations[2017]
