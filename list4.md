@@ -1,4 +1,4 @@
-## 
+## Performance Evaluation of Sparse Matrix-Vector Multiplication Using GPU/MIC Cluster[2015]
 ### References
 1. Achieving Efficient Strong Scaling with PETSc Using Hybrid MPI/OpenMP Optimisation[2013]
 2. Parallel Sparse Matrix - Vector Product: Pure MPI and hybrid MPI-OpenMP implementation[2012]

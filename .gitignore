@@ -1,0 +1,16 @@
+*.pdf
+# ignore files associated "tex"
+*.aux
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+
+# ignore image files
+*.png
+*.jpg
