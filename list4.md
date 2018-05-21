@@ -28,3 +28,8 @@
 ## A Study of SpMV Implementation Using MPI and OpenMP on Intel Many-Core Architecture[2015]
 1. Exploiting Compression Opportunities to Improve SpMxV Performance on Shared Memory Systems[2010]
 3. Efficient Sparse Matrix-Vector Multiplication on x86-Based Many-Core Processors[2013]
+
+## Others
+### from Science Direct
+- Improved row-grouped CSR format for storing of sparse matrices on GPU[2009]
+- Accelerating sparse matrix vector multiplication in iterative methods using GPU[2011]
