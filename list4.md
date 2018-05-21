@@ -29,6 +29,20 @@
 1. Exploiting Compression Opportunities to Improve SpMxV Performance on Shared Memory Systems[2010]
 3. Efficient Sparse Matrix-Vector Multiplication on x86-Based Many-Core Processors[2013]
 
+## Efficient sparse matrix-vector multiplication on x86-based-many-core processors[2013]
+2. Generic parallel algorithms for sparse matrix and graph computations[2012]
+3. Reduced-bandwidth multithreaded algorithms for sparse matrix-vector multiplication[2011]
+6. SpMV: A memory-bound application on the GPU stuck between a rock and a hard place[2012]
+7. Performance evaluation of the sparse matrix-vector multiplication on modern architectures[2009, Supercomput]
+9. A comparative study of blocking storage methods for sparse matrices on multicore architectures[2009]
+10. Exploiting compression opportunities to improve SpMxV performance on shared memory systems[2010]
+11. **Sparse matrix-vector multiplication on GPGPU clusters: A new storage format and a scalable implementation[2012]**
+12. Adaptive runtime tuning of parallel sparse matrix-vector multiplication on distributed memory systems[2008]
+14. Implementing blocked sparse matrix-vector multiplication on NVIDIA GPUs[2009]
+20. Improving performance of sparse matrix-vector multiplication[1999, Supercomputing]
+21. clSpMV: A cross-platform OpenCL SpMV framework on GPUs[2012]
+26. Optimization of sparse matrix-vector multiplication on emerging multicore platforms[2007]
+
 ## Others
 ### from Science Direct
 - Improved row-grouped CSR format for storing of sparse matrices on GPU[2009]
