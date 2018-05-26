@@ -1,25 +1,39 @@
-\documentclass[12pt, unicode]{beamer}
-\usetheme{CambridgeUS}
-%\usepackage{luatexja}
+\documentclass[12pt, unicode, dvipdfmx]{beamer}
+%\usetheme{CambridgeUS}
+\usetheme{Madrid}
+\usecolortheme{beaver}
 
-\title{group-reading}
-\author{Shota-Tsuji}
-\date{}
-\institute{Tsukuba University}
+\AtBeginSection[]{
+  \begin{frame}
+		\frametitle{Table of Contents}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+
+\setbeamertemplate{navigation symbols}{}
 
 \begin{document}
+\title[group-reading]{High Performance Computing\\Modern Systems and Practices\\2.7-2.8}
+\author{Shota Tsuji}
+\date{\today}
+\institute[Algorithm-Team]{HPCS laboratory, Algorithm-Team}
 
-\frame{\maketitle}
+%\frame{\maketitle}
+%\maketitle
+\begin{frame}
+	\titlepage
+\end{frame}
+
 \begin{frame}
 	\tableofcontents
 \end{frame}
 
 \section{Single-Instruction, Multiple Data Array}
-\begin{frame}
+\begin{frame}[t]
 	\frametitle{1st title}
 	aaa
 \end{frame}
 
-\subsection{Single-Instruction, Multiple Data Architecture}
+\subsection{2.7 Single-Instruction, Multiple Data Architecture}
 
 \end{document}
