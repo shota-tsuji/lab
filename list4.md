@@ -43,6 +43,10 @@
 21. clSpMV: A cross-platform OpenCL SpMV framework on GPUs[2012]
 26. Optimization of sparse matrix-vector multiplication on emerging multicore platforms[2007]
 
+## 
+3. A new approach for sparse matrix vector product on NVIDIA GPUs[2011]
+4. Hybrid-parallel sparse matrix-vector multiplication with explicit communication overlap on current multicore-based systems[2011]
+
 ## Others
 ### from Science Direct
 - Improved row-grouped CSR format for storing of sparse matrices on GPU[2009]
