@@ -306,3 +306,25 @@ MPPアーキテクチャ
 - こういった（初期の）歴史が示すように，
 - 2つのレベルのcommodity cluster
 	- 2つの対応したマイクロプロセッサのレベルのため
+	- Commerical-grade microprocessors
+		- industrial-grade workstationsに使われた
+		- 性能が問題となる
+	- 一方で，consumer-grade microprocessors
+		- personal computersに使われた
+		- 費用がとても重要
+- 最終的には差別化されていた市場が合わさり，32bitと64bitアーキテクチャが一般的になった
+
+- 典型的には，commodity clustersはコア数に対する効率はMPPsよりも低い
+	- HPL benchmark
+	- 同時代のMPPSがある仕事に対して90%の効率化を図った一方，
+	- commodity clustersは60~70%の効率化だった
+	- ?しかしながら，degree of coupligの面で見ると，仕事量は大きく変化する
+	- clustersは，parameter sweepのようなスループットの計算では素晴らしい
+		- parameter sweepは相互通信にはあまり頼っておらず，ローカルな処理能力に依るから
+
+- 今日の最も早いスーパーコンピュータは，MPPsとcommodity clustersの組み合わせ
+	- 現在では，Top500にのるシステムの80%以上で，clustersは使われている
+	- 驚くことではないが，最適化されたSANsとともにスーパーコンピュータ目的で作られたMPPsの優れた性質から，最も早いマシンの大半はこのクラスに属する
+
+- 歴史的にcommodity clustersは，早期に非同期転送モード(ATM)，Myrinet，Ethenet 100BaseTを提供していたたくさんのCOTSネットワークを用いていた
+- 現世代のclustersは，主にGigabit Ethenet or Infiniband Networksを使用している
