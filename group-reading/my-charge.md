@@ -248,4 +248,17 @@ MPPアーキテクチャ
 	- グループ間での調整も必要
 
 - message passingのための論理機能に関して
-	- 
+	- 物理的なsystem area network(SAN)がによって可能に
+		- ひとつのシステムを形成するために，すべてのノードを統合
+	- システム中の2つのprocessor cores間でmessageをやりとり
+		- コアごとに別々のプロセスを走らせている
+		- 詳しくはChapter 8
+		- この方法により，受け取りプロセスとhost processorは，送信側からデータを取得できる
+	
+	- このネットワークを用いて，別々のprocessorで走るプロセスの同期をとれる
+
+- Intel ASCI Red MPP
+	- the first system capable of teraflops
+	- By 1997
+	- HPL benchmark
+	- deployed at Sandia National Laboratories
