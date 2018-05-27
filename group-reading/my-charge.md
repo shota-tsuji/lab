@@ -262,3 +262,47 @@ MPPアーキテクチャ
 	- By 1997
 	- HPL benchmark
 	- deployed at Sandia National Laboratories
+
+## 2.8.3 COMMODITY CLUSTERS
+- スーパーコンピュータのすべての現在の世代は活用している一方で
+	- VLSIマイクロプロセッサとDRAMメインメモリを組み込んでいるという経済的利点
+		- 商業および消費者市場のために大量生産されているような
+- これまでのシステム
+	- 特定の目的に特化した設計
+	- processor cores同士の密結合を提供
+	- 高い性能が目的
+- しかし，配備されたスーパーコンピュータの支配的な階級（commodity clusters）は，大衆市場経済を利用している
+- さらに多くのコスト利益を得るために
+
+- commodity off-the-shelf(COTS) components
+- 名前のとおり
+- 商用のサブシステム(既成品)からなる
+
+- Dongarraによるcommodity clusterの定義
+	- ネットワークと計算ノード
+		- 商用製品
+		- 機器メーカーよりも一般使用者orベンダー向け
+		- 調達可能 & 独立したアプリケーションに使用可能
+
+- The key idea
+	- スーパーコンピュータが要素となる部品から組み上げられる
+	- 配備されたスーパーコンピュータをベースにしたものではない
+	- ユーザ市場で調達できる
+	- ユーザ市場向けに生産されている
+	-	thus leveraging economy of scale for dramatic improvements of performance to cost
+
+- consumer-gradeなシステム要素の使用
+	- 1990年代なかば
+	- 改善により，オーダーを上回ることがよく起こった
+- the network of workstations(NOW) cluster
+	- commerical-grade 
+	- カリフォルニア大学バークレー校
+	- Top500に入った初めてのcommodity cluster(1997)
+- Beowulf cluster
+	- consumer-grade personal computers
+	- NASAジェット推進研究所 & カリフォルニア工科大学
+	- 初めてGordon Bell Prizeを獲得
+
+- こういった（初期の）歴史が示すように，
+- 2つのレベルのcommodity cluster
+	- 2つの対応したマイクロプロセッサのレベルのため
