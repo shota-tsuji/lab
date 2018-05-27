@@ -2,6 +2,7 @@
 %\usetheme{CambridgeUS}
 \usetheme{Madrid}
 \usecolortheme{beaver}
+\usepackage[absolute,overlay]{textpos}
 
 \AtBeginSection[]{
   \begin{frame}
@@ -32,8 +33,181 @@
 \begin{frame}[t]
 	\frametitle{1st title}
 	aaa
+	\begin{itemize}
+		\item SIMD
+		\begin{itemize}
+			\item 1980~1990年代の並列処理を行うコンピュータアーキテクチャとしてメジャーな分野だった
+			\item 大規模集積回路の技術ととくにマッチした
+			\item 並列処理のためのこの手法は，特定の処理と高速化のために，幅広いコンピュータの要素技術として現在でも見受けられる
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
 \subsection{2.7 Single-Instruction, Multiple Data Architecture}
+\begin{frame}[t]
+	\begin{itemize}
+		\item SIMD配列の類の並列コンピュータアーキテクチャは非常に多数の比較的単純なプロセスエレメントから成るもの
+	\end{itemize}
+	\begin{textblock*}{0.8\linewidth}(30pt,50pt)
+		\centering
+		\includegraphics[width=\linewidth]{./fig-2-13.png}
+	\end{textblock*}
 
+\end{frame}
+
+\begin{frame}[t]
+	\begin{itemize}
+		\item それぞれプロセスは，各自のもつデータメモリに対して操作をおこなう
+		%\item PEsは，すべてのプロセスに順番に命令をブロードキャストするようにしてコントロールされていた．shared sequencer または sequence controllerと呼ばれるものによって
+		\item shared sequencerまたはsequence controllerと呼ばれるものが，すべてのPEに順番に命令をブロードキャストすることで制御していた
+		\item 処理時間内においては，つねに，すべてのPEが与えられたメモリブロック（一部）に対して，同じ処理を行うかたちをとっていた．
+		\item SIMD arrayアーキテクチャは，独立したシステム or	アクセラレータとして他のコンピュータシステムとともに組み込まれて用いられていた．
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+	\begin{itemize}
+		\item SIMD配列としてのプロセスは，このレベル（どのレベル？）における並列性を通して，潜在的に非常に高い性能を獲得するために,たくさん複製された．
+		\item 標準的なプロセスは，これから挙げるような，重要な（キーとなる）内部機能要素から構成されている．
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+	\frametitle{2.7 Single-Instruction, Multiple Data Architecture}
+	\begin{itemize}
+		\item Memory block
+		\begin{itemize}
+			\item 直接アクセスできるシステム全体のメモリの一部分を，個々のプロセスに提供する（機能）
+		\end{itemize}
+
+		\item ALU
+		\begin{itemize}
+			\item ローカルメモリ上のデータ内容を扱う操作を実行する
+			\item 大抵は，sequence controllerからブロードキャストされた命令に含まれる，追加の（即値オペランドとしての）即値とともにローカルのレジスタを通して
+		\end{itemize}
+		
+	\item Local registers
+		\begin{itemize}
+			\item プロセスで実行される操作のために使われている値を格納する
+			\item load/storeアーキテクチャでは，ローカルメモリへの直接的なインターフェースとなっている
+			\item ローカルレジスタは，（システムに広がるネットワーク上や他のリモートのプロセスから取ってくる)ローカルにないデータの通信を行うための中間バッファ（仲介役?）として動作する-I/O channelsと同じように
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+	\frametitle{2.7 Single-Instruction, Multiple Data Architecture}
+	\begin{itemize}
+		\item Sequencer controller
+		\begin{itemize}
+			\item system instruction sequencerから流れてくる命令を受け付ける
+			\item 必要になったローカルプロセスをコントロールする信号を作りだす(microoperationsの並びとして)
+		\end{itemize}
+	\item Instruction interface
+		\begin{itemize}
+			\item sequence controllerから流れてくる命令列を分配する，broadcast networkにつながったポート
+		\end{itemize}
+	\item Data interface
+		\begin{itemize}
+			\item プロセスがもつmemory block間のデータを交換するためのシステム上のデータネットワークにつながったポート
+		\end{itemize}
+		\item ternal I/O interface
+		\begin{itemize}
+			\item 個々のPEを関連づけるシステムのためのポート
+			\item システムの外部I/Oチャンネルがついている
+			\item PEは与えられたポートに対するdirect interfaceを含んでいる
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+	\begin{itemize}
+		\item SIMD配列のsequence controllerは，まとまったプロセスによって実行される操作を定義している
+		\item またSIMD配列のsequence controllerは計算作業そのもののうち，いくつかを担っている
+		\item sequence controllerは多様な形態をとることがあり，今日においてもそれ自体が新しい設計のためのターゲットとなっている
+		\item しかし一般的な感覚としては，一連の機能と構成要素がほとんどのばらつき（変化）を統一している
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+	\begin{alertblock}{Amdahl's Law}
+		\centering
+		$S = \frac{1}{1-f+\left(\frac{f}{p_n}\right)}$
+	\end{alertblock}
+
+	\begin{itemize}
+		\item 古典的なSIMD arrayコンピュータにおけるパフォーマンス向上の評価
+		\item 仮定
+		\begin{itemize}
+			\item 与えられたひとつの命令サイクルにおける処理
+			\begin{itemize}
+				\item すべてのarray processor cores(p\_n)がそれぞれの操作を同時に行う場合
+				\item controll sequenceが逐次命令を行う（array processor coresは休んだまま）場合
+			\end{itemize}
+			\item サイクル数fはarray processor coresを利用できるとする
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{2.7.2 Single-Instruction, Multiple Data Architecture}
+\begin{frame}[t]
+	\frametitle{AMDAHL'S LAW}
+	\begin{itemize}
+		\item 理想的には，はじめからおわりまですべての計算部分が，同時に実行されるような並列な部品に分割できるはず
+		\begin{itemize}
+			\item たくさんの計算資源が計算に同時に利用される
+			\item 計算の中で（間）は，処理の終了までの時間を均一する
+			\item 処理速度の向上
+		\end{itemize}
+		\item この理想的なケースのように並列化できる極端な例も存在するが，大抵のアプリケーション・プログラムでは確かに並列に計算する部分に加えて，（限界まで並列化しても）並列部分が少ない or 全く並列化されない部分が現れる
+		\begin{itemize}
+			\item 可能な部分 : 同時計算を通して加速するような
+			\item 並列化されない部分 : そのまま逐次で実行して，一度に一命令を発行するような
+		\end{itemize}
+	\item 全体の実行時間の中で並列部分と逐次部分を結びつける\alert{computing profile}が，並列化を通して達成される最大の高速化に関する重要な境界線を引く
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+	\begin{itemize}
+		\item Amdahl's law
+		\begin{itemize}
+			\item この境界条件を決める公式化のうち，最も広くしられている
+			\item 初めてこの境界を成文化した有名なコンピュータアーキテクトにちなんでいる
+		\end{itemize}
+	\item 一般的に並列計算へより広範囲に（わたって）適用可能である一方，Amdahlの法則は特にSIMD array計算の性能のモデリングによくあっている．（いくつかのわずかな単純化の前提とともに）-そして，これがここでのAmdahlの法則の導入の動機づけている
+	\item のちほど，それは，並列アーキテクチャの他の形式を理解するために使われる
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+	\begin{itemize}
+		\item SIMDに関する想定
+		\item 2つの実行形式
+		\begin{itemize}
+			\item sequential : 中央演算装置が一度に一命令を実行する
+			\item parallel : すべてのarray processor coresが同時にそれぞれの操作を実行する
+		\end{itemize}
+	\item クロックレート
+		\begin{itemize}
+			\item 中央演算装置とarray porcessor coresの両方のクロックレートは同じ
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]
+	2つのタイムライン
+	\begin{itemize}
+		\item ひとつめはすべての計算操作の逐次実行T\_0-ふたつめは操作fの割合（部分）, T\_f-並列で行われ，並列のレベルgで
+		\item 理想的には，パフォーマンスの向上はgとなる．
+	\end{itemize}
+	\begin{textblock*}{0.5\linewidth}(10pt,150pt)
+		\centering
+		\includegraphics[width=\linewidth]{./fig-2-14.png}
+	\end{textblock*}
+	\begin{textblock*}{0.5\linewidth}(150pt,150pt)
+		\centering
+		\includegraphics[width=\linewidth]{./fig-2-15.png}
+	\end{textblock*}
+\end{frame}
 \end{document}
